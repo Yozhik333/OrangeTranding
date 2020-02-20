@@ -1,0 +1,99 @@
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html
+	overflow-x: hidden !important
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.4
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+// Settings
+
+header, section
+	position: relative
+
+h1, h2, h3, h4, h5, h6
+	line-height: 1.2
+
+.hidden
+	display: none
+
+// h1-h6
+h1
+	font-size: 48px
+
+h2
+	font-size: 38px
+
+h3
+	font-size: 32px
+
+h4
+	font-size: 28px
+
+h5
+	font-size: 22px
+
+h6
+	font-size: 18px
+
+// Links
+
+a
+	color: $accent
+	text-decoration: none
+	&:focus, &:hover, &:active
+		text-decoration: none
+
+// List
+ul, li
+	padding: 0
+	margin: 0 
+	list-style-type: none
+
+// Button
+
+button
+	outline: none
+	cursor: pointer
+
+// Modal
+.modal
+	max-width: 500px
+	margin: 0 auto
+	background: #fff
+	position: relative
+
+// Section
+section

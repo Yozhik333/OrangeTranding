@@ -1,0 +1,9 @@
+@import "_mixins/font-face";
+
+@include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyrBold/HelveticaNeueCyrBold", bold);
+@include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyrLight/HelveticaNeueCyrLight", 200);
+@include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyrMedium/HelveticaNeueCyrMedium", 500);
+@include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyrRoman/HelveticaNeueCyrRoman");
+@include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyrThin/HelveticaNeueCyrThin", 300);
+@include font-face("Simeiz", "../fonts/SimeizDemiC/SimeizDemiC");
+@include font-face("Simeiz", "../fonts/Simeiz/Simeiz");

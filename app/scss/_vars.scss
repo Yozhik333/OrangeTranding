@@ -1,0 +1,22 @@
+$default-font: "HelveticaNeueCyr", sans-serif;
+$accent: #ffa337;
+$yellow: #ff8e00;
+$cow: #b29c77;
+$text: #1e1e1c;
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1366px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+$gutter: $grid-gutter-width;
+
+@function fs($f-min, $f-max, $v-min, $v-max) {
+	$k: ($f-max - $f-min)/($v-max - $v-min);
+	$b: $f-min - $k * $v-min;
+	
+	$b: $b * 1px;
+	
+	@return calc( #{$k} * 100vw + #{$b} );
+}
