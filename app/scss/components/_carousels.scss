@@ -3,10 +3,6 @@
 	position: absolute;
 	left: -230px;
 	right: 0;
-	@include media-breakpoint-down(lg){
-		position: relative;
-		left: 0;
-	}
 }
 .swiper-container {
 	width: 100%;
@@ -29,11 +25,9 @@
 }
 .swiper-slide {
 	box-shadow: 0 0 58px 1px rgba(0, 0, 0, 0.46);
-	margin-left: 70px;
+	left: 70px;
+	position: relative;
 	border: 1px solid #cccccc;
-	@include media-breakpoint-down(lg){
-		margin-left: 0;
-	}
 	&__img{
 		width: 543px;
 		height: 100%;
@@ -57,9 +51,6 @@
 
 .swiper-container-horizontal>.swiper-pagination-bullets{
 	transform: translate(232px, 0px);
-	@include media-breakpoint-down(lg){
-		transform: translate(0, 0px);
-	}
 }
 
 .swiper-button-next, .swiper-button-prev{
