@@ -1,0 +1,153 @@
+.footer {
+	background-color: #1e1e1c;
+	height: 272px;
+	border-bottom: solid #d2b78c 7px;
+	padding-top: 64px;
+	position: relative;
+	
+	&::before{
+		content: '';
+		position: absolute;
+		top: 9px;
+		right: 0;
+		left: 0;
+		height: 1px;
+		background-color: #d2b78c;
+	}
+	
+	&-title {
+		color: #b29c77;
+		font-family: "Simeiz";
+		font-size: 14px;
+		font-weight: 400;
+		margin-bottom: 18px;
+	}
+	.text-white{
+		color: #fff;
+	}
+	
+	.logo{
+		margin: -10px 82px 0 0;
+	}
+	
+	.icon-header-icon-inst{
+		background-image: url("../img/svg-src/footer-ic.png");
+		height: 28px;
+		width: 28px;
+	}
+	
+	.social-icon{
+		margin-top: 64px;
+	}
+	
+	.phone__order{
+		margin: 0 0 52px;
+		background-color: #1e1e1c;
+	}
+	
+	.phone__order-btn-wrapper::after{
+		background-color: #1e1e1c;
+	}
+}
+
+.site-map {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	
+	a {
+		color: #ffffff;
+		font-family: "HelveticaNeueCyr";
+		font-size: 12px;
+		font-weight: 400;
+		display: flex;
+		align-items: center;
+		position: relative;
+		padding-left: 0;
+		transition: padding-left .3s ease-in-out;
+		
+		&::before {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 2px;
+			background-color: transparent;
+			transition: width .3s ease-in-out;
+			left: 0;
+			top: 10px;
+		}
+	}
+	
+	li {
+		&:not(:last-child) {
+			margin-bottom: 18px;
+		}
+		
+		&.active {
+			a {
+				color: #ffa337;
+				padding-left: 30px;
+				
+				&::before {
+					width: 25px;
+					background-color: #ffa337;
+				}
+			}
+		}
+		
+		&:hover {
+			a {
+				color: #ffa337;
+				padding-left: 30px;
+				
+				&::before {
+					width: 25px;
+					background-color: #ffa337;
+				}
+			}
+		}
+	}
+}
+
+.ul-contact {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+	.text {
+		color: #ffffff;
+		font-size: 12px;
+		font-weight: 400;
+		font-family: "HelveticaNeueCyr";
+		font-weight: 400;
+		
+		.italic {
+			font-style: italic;
+		}
+	}
+	
+	a {
+		color: inherit;
+	}
+	
+	li {
+		display: flex;
+		align-items: center;
+		
+		img{
+			margin-right: 15px;
+		}
+		
+		&:not(:last-child) {
+			margin-bottom: 17px;
+		}
+	}
+}
+
+.info-block{
+	div:not(:last-child){
+		margin-right: 140px;
+	}
+}
+
