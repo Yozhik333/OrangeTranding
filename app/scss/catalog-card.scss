@@ -1,0 +1,114 @@
+// Catalog *****************************
+
+.catalog-banner{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 159px;
+}
+
+
+// Alco-Card ***************************
+
+.alco-card-banner{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 159px;
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+
+.alco-card{
+	background-color: #fefcf9;
+	&-wrap{
+		max-width: 1120px;
+		margin: 0 auto;
+		position: relative;
+		.alco-card-body{
+			display: flex;
+			flex-flow: wrap;
+			justify-content: center;
+			margin-top: 100px;
+			&__img{
+				width: 529x;
+				padding: 41px 67px;
+				background-color: #fff;
+				img {
+					max-width: 100%;
+				}
+			}
+			&__description{
+				padding: 0 0 0 69px;
+				@media (max-width: 1200px) {
+					width: 100%;
+				}
+				@media (max-width: 768px) {
+				padding: 0 15px;
+				}
+				.alco-card-body__description-headline{
+					margin: 10px 0 20px;
+					padding: 0 0 10px 0;
+					position: relative;
+					@media (max-width: 1200px){
+						position: absolute;
+						top: -7%;
+						left: 50%;
+						transform: translateX(-50%);
+						h2{
+							text-align: center;
+						}
+						&::before{
+							width: 100%;
+						}
+					}
+					&::before{
+						content: '';
+						position: absolute;
+						height: 2px;
+						width: 119px;
+						background-color: #d2b78c;
+						bottom: 0;
+						@media (max-width: 1200px){
+							width: 100%;
+						}
+					}
+					h2{
+						color: #d2b78c;
+					}
+				}
+				table{
+					width: 510px;
+					@media (max-width: 1200px) {
+						width: 100%;
+					}
+					td{
+						padding: 0 0 27px 0;
+						font-weight: 500;
+						i{
+							font-weight: 100;
+						}
+						&:first-child{
+							padding: 0 23px 27px 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.alco-card-character{
+	h4{
+		font-size: 24px;
+		font-weight: 500;
+		margin: 0 0 23px 0;
+	}
+	p{
+		margin: 0 0 17px 0;
+		span{
+			font-weight: 700;
+		}
+	}
+}

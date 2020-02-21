@@ -146,3 +146,30 @@ button {
 .flex-grow-1{
 	flex-grow: 1;
 }
+
+.ref-path {
+	padding: 40px 0;
+	ul{
+		display: flex;
+		flex-flow: wrap;
+		li{
+			padding: 0 7px;
+			a{
+				color: #000;
+				transition: color .4s ease, text-shadow .4s ease;
+				&:hover{
+					color: $accent;
+					text-shadow: 2px 2px 2px $accent;
+				}
+			}
+			&:last-child{
+				a{
+					color: $accent;
+				}
+			}
+		}
+		li:not(:last-child){
+			border-right: 1px solid $text;
+		}
+	}
+}
