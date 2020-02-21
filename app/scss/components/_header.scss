@@ -32,6 +32,9 @@
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 33.9px;
+	@include media-breakpoint-down(lg){
+		display: none;
+	}
 }
 
 .subheader {
@@ -109,6 +112,9 @@
 }
 
 .list-inline {
+	@include media-breakpoint-down(lg){
+		display: none;
+	}
 	> li {
 		display: inline-block;
 	}
