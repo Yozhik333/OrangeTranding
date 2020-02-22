@@ -68,7 +68,7 @@ input[type="button"] {
 	font-family: "HelveticaNeueCyr";
 	font-size: 11px;
 	font-weight: 400;
-	padding: 9px 0 4px;
+	padding: 6px 0 7px;
 	text-transform: uppercase;
 	position: relative;
 	transition: background-color .3s ease-in-out;
@@ -181,4 +181,60 @@ input[type="button"] {
 			margin: 0 auto;
 		}
 	}
+}
+
+
+.select-wrap{
+	margin: 0 0 60px 0;
+	i{
+		color: #bfbfbf;
+		font-size: 12px;
+	}
+}
+
+select {
+	appearance: none;
+	outline: 0;
+	box-shadow: none;
+	border: 0 !important;
+	background-image: none;
+	background: red;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+	display: none;
+}
+/* Custom Select */
+.select {
+	position: relative;
+	display: flex;
+	width: 20em;
+	border: 1px solid $cow;
+	height: 3em;
+	line-height: 3;
+	overflow: hidden;
+}
+select {
+	flex: 1;
+	padding: 0 .5em;
+	color: #000;
+	cursor: pointer;
+}
+/* Arrow */
+.select::after {
+	content: '‹';
+	position: absolute;
+	top: -100%;
+	right: 0;
+	font-weight: 100;
+	transform: rotate(-90deg);
+	padding: 0 1em;
+	font-size: 50px;
+	cursor: pointer;
+	pointer-events: none;
+	transition: .25s all ease;
+}
+/* Transition */
+.select:hover::after {
+	color: #f39c12;
 }

@@ -4,8 +4,71 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 159px;
+	min-height: 159px;
+	.catalog-filter{
+		display: flex;
+		align-items: center;
+		padding: 40px 0;
+		width: 100%;
+		&__img{
+			width: 59px;
+			margin: 0 10px 0 5px;
+			transition: transform .4s ease;
+			img{
+				// max-width: 100%;
+				cursor: pointer;
+			}
+			&:hover{
+				transform: scale(1.1);
+			}
+		}
+		&__body{
+			background-color: rgba(255, 255, 255, 0.61);
+			width: 100%;
+			padding: 0 14px;
+			ul{
+				display: flex;
+				flex-flow: wrap;
+				li{
+					display: flex;
+					opacity: 0.6;
+					margin: 0 45px 0 0;
+					.filter-delete{
+						font-size: 24px;
+						font-weight: 100;
+						margin: 0 7px 0 0;
+						cursor: pointer;
+						transition: color .4s ease;
+						&:hover{
+							color: $accent;
+							opacity: 1;
+						}
+					}
+					p{
+						display: flex;
+						align-items: center;
+						i{
+							margin: 0 4px 0 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	.catalog-banner__caption{
+		@media (max-width: 1200px) {
+			visibility: hidden;
+			position: absolute;
+		}
+		h1{
+			opacity: 0.45;
+			font-size: 76px;
+			text-transform: uppercase;
+			margin: 0 0 0 10px;
+		}
+	}
 }
+
 
 
 // Alco-Card ***************************

@@ -31,8 +31,31 @@
 	<div id="header"></div>
 
 	<div class="catalog-banner" style="background-image: url(img/catalog-banner.jpg);">
-		fdfdf
+		<div class="header-container">
+			<div class="catalog-filter">
+				<div class="catalog-filter__img">
+					<img src="img/catalog-filter.svg" alt="Фильтр">
+				</div>
+				<div class="catalog-filter__body">
+					<ul>
+						<li>
+							<div class="filter-delete">&#10005;</div>
+							<p><i>Цена: </i> 15 000 - 50 000</p>
+						</li>
+						<li>
+							<div class="filter-delete">&#10005;</div>
+							<p><i>Регион: </i> Алматы</p>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-banner__caption">
+					<h1>каталог</h1>
+				</div>
+			</div>
+			
+		</div>
 	</div>
+	<!-- .catalog-banner -->
 
 	<section class="products-items">
 			<div class="header-container">
@@ -40,7 +63,30 @@
 				<!-- <div class="title-page__wrap">
 					<h2>популярные <span>новинки</span></h2>
 				</div> -->
-				
+
+				<div class="select-wrap">
+					<i>Отсортировать по:</i>
+					<div class="flex">
+						<div class="select">
+							<select name="slct" id="slct">
+								<option selected>Новизне</option>
+								<option value="1">Крутизне</option>
+								<option value="2">Цене</option>
+								<option value="3">Запаху</option>
+							</select>
+						</div>
+						<div class="select">
+							<select name="slct" id="slct1">
+								<option selected>Новизне</option>
+								<option value="1">Крутизне</option>
+								<option value="2">Цене</option>
+								<option value="3">Запаху</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<!-- /.select-wrap -->
+
 				<div class="products-items-list flex-wrap flex">
 						<div class="product__item-wrapper">
 								<div class="product__item">
