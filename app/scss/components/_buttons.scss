@@ -186,9 +186,22 @@ input[type="button"] {
 
 .select-wrap{
 	margin: 0 0 60px 0;
+	position: relative;
 	i{
 		color: #bfbfbf;
 		font-size: 12px;
+	}
+	&::before{
+		content: '';
+		position: absolute;
+		height: 2px;
+		background-color: $cow;
+		left: 200px;
+		bottom: 30%;
+		right: 0;
+	}
+	.select-container{
+		flex-flow: wrap;
 	}
 }
 
@@ -198,7 +211,7 @@ select {
 	box-shadow: none;
 	border: 0 !important;
 	background-image: none;
-	background: red;
+	background: #fefcf9;
 }
 /* Remove IE arrow */
 select::-ms-expand {
@@ -208,15 +221,21 @@ select::-ms-expand {
 .select {
 	position: relative;
 	display: flex;
-	width: 20em;
 	border: 1px solid $cow;
-	height: 3em;
 	line-height: 3;
-	overflow: hidden;
+	margin: 13px 30px 0 0;
+	&::before{
+		content: '';
+		position: absolute;
+		background-color: #fefcf9;
+		right: -41px;
+		width: 40px;
+		height: 100%;
+	}
 }
 select {
 	flex: 1;
-	padding: 0 .5em;
+	padding: 0 55px 0 18px;
 	color: #000;
 	cursor: pointer;
 }
@@ -225,10 +244,10 @@ select {
 	content: '‹';
 	position: absolute;
 	top: -100%;
-	right: 0;
+	color: $cow;
+	right: 20px;
 	font-weight: 100;
 	transform: rotate(-90deg);
-	padding: 0 1em;
 	font-size: 50px;
 	cursor: pointer;
 	pointer-events: none;
