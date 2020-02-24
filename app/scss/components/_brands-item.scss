@@ -25,7 +25,8 @@
 }
 
 .brands-items-list {
-	margin: 0 -22px;
+	// margin: 0 ;
+	margin: 60px -22px 0;
 	@include media-breakpoint-down(xl){
 		justify-content: center;
 	}
@@ -149,6 +150,229 @@
 			background-color: #ff8e00;
 			transition: opacity .3s ease-in-out;
 			z-index: 2;
+		}
+	}
+}
+
+
+
+
+// Brand Single Card *************************************************************
+
+.brand-card-banner{
+	border: 1px solid #000;
+	display: flex;
+	background: #2f2f2c;
+	@media (max-width: 1200px) {
+		flex-flow: column wrap;
+		height: 100%;
+		.brand-card-banner__left{
+			&::after{
+				width: auto!important;
+				border: 1px solid #f7f6fb!important;
+				left: 5%!important;
+				right: 5%!important;
+			}
+		}
+	}
+	.brand-card-banner__left{
+		padding: 5.2rem 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 35%;
+		position: relative;
+		overflow: hidden;
+		@media (max-width: 1200px) {
+			width: 100%;
+		}
+		.brand-card-banner-caption{
+			@media (max-width: 1200px) {
+				display: flex;
+				justify-content: space-evenly;
+				width: 100%;
+				align-items: center;
+				flex-flow: wrap;
+				padding: 0 40px;
+				h2{
+					margin-bottom: 0!important;
+				}
+			}
+			&__img{
+				width: 234px;
+				img{
+					max-width: 100%;
+				}
+			}
+			h2{
+				color: #fff;
+				font-size: 5.25rem;
+				margin-bottom: 1.25rem;
+				text-transform: capitalize;
+			}
+		}
+		&::after{
+			content: '';
+			display: block;
+			border: 2px solid #fff;
+			height: 20rem;
+			width: 5rem;
+			position: absolute;
+			right: -1rem;
+			top: 2.6rem;
+		}
+	}
+	.brand-card-banner__right{
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 65%;
+		position: relative;
+		@media (max-width: 1200px) {
+			width: 100%;
+		}
+		.brand-card-banner-slider{
+			position: absolute;
+			top: 4.1rem;
+			left: -2.5rem;
+			@media (max-width: 1200px) {
+				position: relative;
+				top: 0;
+				.brand-card-product{
+					max-width: 20rem!important;
+					margin: 0 auto;
+					left: 0;
+				}
+			}
+			.brand-card-product{
+				max-width: 17rem;
+			}
+		}
+		.brand-card-slider-arrow{
+			position: absolute;
+			top: 10rem;
+			right: 8.5rem;
+			background: #fff;
+			opacity: 0.9;
+			height: 6rem;
+			width: 6rem;
+			border-radius: 50%;
+			cursor: pointer;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			z-index: 2;
+			@media (max-width: 1200px) {
+				position: relative;
+			}
+			img{
+				width: 50%;
+				&::selection {
+					background: none;
+				}
+			}
+			&:hover{
+				transition: .4s ease-in-out;
+				opacity: 1;
+				-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+				-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+				box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+			}
+		}
+	}
+}
+
+.owl-theme .owl-dots {
+	display: flex;
+	position: absolute;
+	right: 0; }
+	.owl-theme .owl-dots .owl-dot {
+		display: block; }
+		.owl-theme .owl-dots .owl-dot span {
+			display: block;
+			width: 2rem;
+			height: 0.25rem;
+			transition: background-color .4s ease;
+			border-radius: 0;
+			margin: 0 10px 0 0;
+			background-color: #fff; }
+		.owl-theme .owl-dots .owl-dot.active span {
+			background-color: #ffa337;
+			
+		}
+		.owl-theme .owl-dots .owl-dot:hover span {
+			background-color: #ffa337; }
+
+.phone-block img {
+	margin-right: 0.5rem; }
+
+.phone-block img:nth-child(2) {
+	display: none; }
+
+.logo {
+	height: auto; }
+
+.search img:last-child {
+	display: none; }
+
+
+.brand-history__wrap{
+	display: flex;
+	margin: 0 auto;
+	flex-flow: wrap;
+	justify-content: center;
+	max-width: 70rem;
+	padding: 3rem 0;
+	@media (max-width: 1200px){
+		padding: 0;
+	}
+	.brand-history__left{
+		width: 100%;
+		max-width: 34rem;
+		order: 1;
+		@media (max-width: 1200px){
+			margin: 20px 0 0;
+		}
+		video{
+			min-height: 22rem;
+			max-width: 33rem;
+			width: 100%;
+			width: 100%;
+			outline: none;
+			object-fit: cover;
+		}
+	}
+	.brand-history__right{
+		padding-left: 3rem;
+		max-width: 40rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		@media (max-width: 1200px){
+			width: 100%;
+			padding: 0;
+		}
+		.brand-history-title{
+			font-size: 2.5rem;
+			color: #d2b78c;
+			font-family: 'Simeiz';
+			&::after{
+				content: '';
+				display: block;
+				height: 2px;
+				width: 100%;
+				max-width: 7.5rem;
+				background: #d2b78c;
+				margin-top: 0.7rem;
+			}
+		}
+	.brand-history-text{
+			font-size: 1rem;
+			margin-top: 1.5rem;
+			margin-bottom: 0;
 		}
 	}
 }

@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>Наши бренды</title>
+	<title>Карточка бренда</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,6 +22,8 @@
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
 
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<4352e8f9-abbc-4cd3-a6ec-47eeb38e3fc7>" type="text/javascript"></script>
+
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -29,56 +31,87 @@
 <body>
 
 	<div id="header"></div>
+	<!-- Header -->
 
 	<div id="wineroom" class="wineroom">
 		<img src="img/wineroom.png" alt="Закрытый фильтр">
 	</div>
 	<!-- /.filter-close -->
 
-	<div class="brands-banner" style="background-image: url(img/brands-banner.jpg);">
-		<div class="header-container">
-			<div class="brands-banner__caption">
-				<h1>наши бренды</h1>
+
+	<div class="brand-card-banner">
+		<div class="brand-card-banner__left" style="background-image: url(img/brands/404-bg.jpg);">
+			<div class="brand-card-banner-caption">
+				<h2>Calvet</h2>
+				<div class="brand-card-banner-caption__img">
+					<img src="img/brands/calvet.png" alt="Calvet">
+				</div>
+			</div>
+		</div>
+		<div class="brand-card-banner__right" style="background-image: url(img/brands/brand-slides-bg.jpg);">
+			<div class="brand-card-banner-slider owl-carousel owl-theme">
+				<div class="brand-card-product">
+					<img src="img/brands/wine-calvet.png" alt="Wine Calvet">
+				</div>
+				<div class="brand-card-product">
+					<img src="img/brands/wine-calvet.png" alt="Wine Calvet">
+				</div>
+				<div class="brand-card-product">
+					<img src="img/brands/wine-calvet.png" alt="Wine Calvet">
+				</div>
+				<div class="brand-card-product">
+					<img src="img/brands/wine-calvet.png" alt="Wine Calvet">
+				</div>
+				<div class="brand-card-product">
+					<img src="img/brands/wine-calvet.png" alt="Wine Calvet">
+				</div>
+				<div class="brand-card-product">
+					<img src="img/brands/wine-calvet.png" alt="Wine Calvet">
+				</div>
+			</div>
+			<div id="brand-card-slider-arrow-next" class="brand-card-slider-arrow">
+				<img src="img/svg-src/arrow.svg" alt="Arrow">
 			</div>
 		</div>
 	</div>
-	<!-- .catalog-banner -->
+
+	<div class="brand-history container">
+		<div class="ref-path">
+			<ul>
+				<li>
+					<a href="#">Каталог товаров</a>
+				</li>
+				<li>
+					<a href="#">Moet & Chandon, Brut "Imperial"</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="brand-history__wrap">
+			<div class="brand-history__left">
+				<video controls="controls" poster="images/poster.jpg">
+					<source src="img/brands/ocean.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				</video>
+			</div>
+			<div class="brand-history__right">
+					<h3 class="brand-history-title">
+						История бренда Calvet
+					</h3>
+					<p class="brand-history-text">
+						История создания успешной компании "Calvet" началась в 1818 году в долине реки Роны, когда за работу на родительских виноградниках в городе Tain L'Hermitage берется будущий "отец" марки Жан-Мари Кальве. В 1823 году в центральном районе Бордо открывается первая точка торговли вином марки Calvet, а спустя еще несколько лет каждый престижный винодельческий район Франции мог похвастаться таким центром. Сегодня Calvet - доступная роскошь французского виноделия. Вина этой марки Calvet можно купить в 100 странах мира, в том числе и в Казахстане.
+					</p>
+			</div>
+		</div>
+	</div>
+
 
 	<section class="brands-items">
 			<div class="header-container">
 
-				<!-- <div class="title-page__wrap">
-					<h2>популярные <span>новинки</span></h2>
-				</div> -->
-
-				<div class="select-wrap">
-					
-					<div class="select-container flex">
-						<div class="select-main-wrap">
-							<i>Категории</i>
-							<div class="select">
-								<select name="slct" id="slct">
-									<option selected>Виски</option>
-									<option value="1">Вино</option>
-									<option value="2">Пиво</option>
-									<option value="3">Эль</option>
-								</select>
-							</div>
-						</div>
-						<div class="select-main-wrap">
-							<i>Страны</i>
-							<div class="select">
-								<select name="slct" id="slct">
-									<option selected>Франция</option>
-									<option value="1">Казахстан</option>
-									<option value="2">Кыргызстан</option>
-									<option value="3">Россия</option>
-								</select>
-							</div>
-						</div>
-					</div>
+				<div class="title-page__wrap">
+					<h2><span>Бренды</span></h2><br>
 				</div>
-				<!-- /.select-wrap -->
+				<p class="text-center">сертифицированной алкогольной продукции</p>
 
 				<div class="brands-items-list flex-wrap flex">
 						<div class="brand__item-wrapper">
@@ -204,9 +237,13 @@
 	<!-- /.brands-items -->
 
 
-	<div id="footer"></div>
-	<!-- /#footer -->
 
+
+	<div id="footer"></div>
+	<!-- Footer -->
+
+	
+	<!-- <script src="icon_customImage.js" type="text/javascript"></script> -->
 	<script src="js/scripts.min.js" async></script>
 
 	<!-- Made in UxCodes -->

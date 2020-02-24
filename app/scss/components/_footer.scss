@@ -25,7 +25,7 @@
 	.text-white{
 		color: #fff;
 	}
-	
+
 	.logo{
 		margin: -10px 82px 0 0;
 	}
@@ -146,8 +146,175 @@
 }
 
 .info-block{
+	.ul-contact{
+		li{
+			.text{
+				a{
+					transition: color .3s ease;
+					&:hover{
+						color: $accent;
+					}
+				}
+			}
+		}
+	}
 	div:not(:last-child){
-		margin-right: 140px;
+		margin-right: 90px;
 	}
 }
 
+
+.phone__order-btn-wrapper{
+	@media (max-width: 1200px) {
+		display: none;
+	}
+}
+
+.site-map{
+	@media (max-width: 1200px) {
+		display: none;
+	}
+}
+
+.footer{
+	@media (max-width: 1200px) {
+		padding-top: 2rem;
+		height: 100%;
+		&::after{
+			content: '';
+			position: absolute;
+			top: 0.5625rem;
+			right: 0;
+			left: 0;
+			height: 0.0625rem;
+			background-color:#d2b78c;
+		}
+	}
+	.logo{
+		@media (max-width: 1200px) {
+			display: none;
+		}
+	}
+}
+
+.info-block{
+	.ul-contact{
+		li{
+			.text{
+				a{
+					transition: color .3s ease;
+					&:hover{
+						color: $accent;
+					}
+				}
+			}
+		}
+	}
+	.footer-title:nth-child(-n+2){
+		@media (max-width: 1200px) {
+			display: none;
+		}
+	}
+	div:not(:last-child){
+		@media (max-width: 1200px) {
+			// display: none;
+		}
+	}
+}
+.text-white{
+	.footer-title{
+		@media (max-width: 1200px) {
+			display: block!important;
+		}
+	}
+}
+
+.mobile-wrap{
+	@media (max-width: 1200px) {
+		display: none;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.info-block-mobile{
+	@media (max-width:1200px) {
+		flex-flow: column;
+		justify-content: center;
+		div{
+			&:last-child{
+				display: flex;
+				.footer-title{
+					margin: 0;
+					justify-content: center;
+					align-items: center;
+				}
+				.social-icon{
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+.footer-mobile{
+	display: none;
+	margin: 0 auto;
+	.footer-mobile-contact{
+		display: flex;
+		flex-flow: wrap;
+		@media (max-width:455px) {
+			justify-content: center;
+			li{
+				margin: 7px 0;
+			}
+		}
+		li{
+			&:first-child{
+				width: 230px;
+			}
+			.footer-mobile-contact-el{
+				display: flex;
+				&__img{
+					width: 20px;
+					margin-right: 13px;
+					img{
+						width: auto;
+					}
+				}
+				.text{
+					color: #fff;
+					a{
+						color: #fff;
+						transition: color .3s ease;
+						&:hover{
+							color: $accent;
+						}
+					}
+				}
+			}
+		}
+	}
+	.license-mobile{
+		color: #fff;
+		text-align: center;
+		margin: 20px 0 0 0;
+		span{
+			color: $cow;
+			font-size: 18px;
+			font-family: 'Simeiz';
+			margin: 0 70px 0 0
+		}
+	}
+	.logo-company-developer{
+		text-align: center;
+		padding: 15px 0;
+	}
+}
+
+.footer-mobile{
+	@media (max-width: 1200px) {
+		display: block;
+	}
+}

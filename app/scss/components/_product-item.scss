@@ -1,6 +1,5 @@
 
 .title-page__wrap {
-	margin: 0 0 40px;
 	display: flex;
 	position: relative;
 	justify-content: center;
@@ -41,7 +40,10 @@
 }
 
 .product__item {
-	padding: 52px;
+	display: flex;
+	flex-flow: column;
+	padding: 45px;
+	width: 100%;
 	text-align: center;
 	box-shadow: 0 0 0 rgba(116, 97, 69, 0.25);
 	transition: box-shadow .3s ease-in-out;
@@ -94,10 +96,8 @@
 	
 	&-wrapper {
 		padding: 11px 12px;
-		width: 20%;
-		@include media-breakpoint-down(xl){
-			width: auto;
-		}
+		width: 293px;
+		display: flex;
 	}
 	
 	
@@ -134,10 +134,11 @@
 	&-title {
 		color: #000000;
 		font-size: 24px;
-		font-weight: 400;
+		font-weight: 600;
 		line-height: 17.97px;
 		margin-bottom: 35px;
-		font-family: 'SimeizDemiC';
+		font-family: 'Simeiz';
+		height: 100%;
 	}
 	
 	&-property {
@@ -147,6 +148,7 @@
 		line-height: 17.97px;
 		margin-bottom: 43px;
 		font-family: "HelveticaNeueCyr";
+		flex-flow: wrap;
 	}
 	
 	&-btn-wrapper {
