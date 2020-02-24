@@ -32,3 +32,36 @@ $('#filter-open-remove').click(function () {
 	$('#filter-open').removeClass('filter-open-active');
 })
 
+
+
+ymaps.ready(function () {
+	var myMap = new ymaps.Map('map', {
+		center: [43.294951, 76.987059],
+		zoom: 23
+	}, {
+		searchControlProvider: 'yandex#search'
+	}),
+
+		// Создаём макет содержимого.
+		MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+			'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+		),
+
+		myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+			hintContent: 'Местонахождение OrangeTrading',
+			balloonContent: 'Приветствуем Вас'
+		}, {
+			// Опции.
+			// Необходимо указать данный тип макета.
+			iconLayout: 'default#image',
+			// Своё изображение иконки метки.
+				iconImageHref: 'img/contacts/yandex-marker.png',
+			// Размеры метки.
+			iconImageSize: [30, 42],
+			// Смещение левого верхнего угла иконки относительно
+			// её "ножки" (точки привязки).
+			iconImageOffset: [-16, -42]
+		});
+
+	myMap.geoObjects.add(myPlacemark);
+});
