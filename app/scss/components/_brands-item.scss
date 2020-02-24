@@ -239,11 +239,11 @@
 			left: -2.5rem;
 			@media (max-width: 1200px) {
 				position: relative;
-				top: 0;
+				top: -50px;
+				left: 0;
 				.brand-card-product{
 					max-width: 20rem!important;
 					margin: 0 auto;
-					left: 0;
 				}
 			}
 			.brand-card-product{
@@ -288,7 +288,13 @@
 .owl-theme .owl-dots {
 	display: flex;
 	position: absolute;
-	right: 0; }
+	right: 0;
+	@media (max-width: 1200px) {
+		right: 50%;
+		transform: translateX(50%);
+		bottom: -50px;
+	}
+}
 	.owl-theme .owl-dots .owl-dot {
 		display: block; }
 		.owl-theme .owl-dots .owl-dot span {
@@ -322,19 +328,19 @@
 .brand-history__wrap{
 	display: flex;
 	margin: 0 auto;
-	flex-flow: wrap;
 	justify-content: center;
 	max-width: 70rem;
 	padding: 3rem 0;
 	@media (max-width: 1200px){
 		padding: 0;
+		flex-flow: wrap;
 	}
 	.brand-history__left{
 		width: 100%;
 		max-width: 34rem;
-		order: 1;
 		@media (max-width: 1200px){
 			margin: 20px 0 0;
+			order: 1;
 		}
 		video{
 			min-height: 22rem;
