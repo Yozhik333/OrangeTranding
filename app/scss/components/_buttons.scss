@@ -202,6 +202,17 @@ input[type="button"] {
 	}
 	.select-container{
 		flex-flow: wrap;
+		.select-main-wrap{
+			position: relative;
+			&::before{
+				content: '';
+				position: absolute;
+				background-color: #fefcf9;
+				right: -8px;
+				width: 40px;
+				height: 100%;
+			}
+		}
 	}
 }
 
@@ -223,21 +234,17 @@ select::-ms-expand {
 	display: flex;
 	border: 1px solid $cow;
 	line-height: 3;
-	margin: 13px 30px 0 0;
-	&::before{
-		content: '';
-		position: absolute;
-		background-color: #fefcf9;
-		right: -41px;
-		width: 40px;
-		height: 100%;
-	}
+	margin: 3px 30px 0 0;
 }
 select {
 	flex: 1;
 	padding: 0 55px 0 18px;
 	color: #000;
 	cursor: pointer;
+	transition: color .4s ease;
+	&:hover{
+		color: $yellow;
+	}
 }
 /* Arrow */
 .select::after {
@@ -256,4 +263,7 @@ select {
 /* Transition */
 .select:hover::after {
 	color: #f39c12;
+}
+.select:hover{
+	border: 1px solid $accent;
 }

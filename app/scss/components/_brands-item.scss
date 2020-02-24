@@ -1,0 +1,154 @@
+.brands-banner{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 159px;
+	.brands-banner__caption{
+		text-align: right;
+		// @media (max-width: 1200px) {
+		// 	visibility: hidden;
+		// 	position: absolute;
+		// }
+		h1{
+			opacity: 0.45;
+			font-size: 76px;
+			text-transform: uppercase;
+			padding: 40px 0 0 0;
+		}
+	}
+}
+
+
+.brands-items{
+	background-color: #fefcf9;
+	padding: 67px 0 0 0;
+}
+
+.brands-items-list {
+	margin: 0 -22px;
+	@include media-breakpoint-down(xl){
+		justify-content: center;
+	}
+}
+
+.brand__item {
+	width: 264px;
+	height: 264px;
+	text-align: center;
+	transition: box-shadow .3s ease-in-out;
+	position: relative;
+	background-color: #ffffff;
+	border-radius: 50%;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	&:hover {
+		box-shadow: 0 0 59px rgba(116, 97, 69, 0.25);
+		&::before {
+			opacity: 0.3;
+		}
+		.brand__item-btn-wrapper {
+			&::before{
+				opacity: 1;
+			}
+		}
+		.btn-primary {
+			color: #ffffff;
+			&::before {
+				opacity: 0;
+			}
+			&::after {
+				opacity: 0;
+			}
+			span {
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+	
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		border: 1px solid #d2b78c;
+		opacity: 0;
+		transition: opacity .3s ease-in-out;
+		border-radius: 50%;
+	}
+	
+	&-wrapper {
+		padding: 11px 12px;
+		width: 264;
+		// @include media-breakpoint-down(xl){
+		// 	width: auto;
+		// }
+	}
+	
+	
+	&-img {
+		width: 160px;
+		height: 93px;
+		img{
+			max-width: 100%;
+		}
+	}
+	&-title {
+		color: #000000;
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 17.97px;
+		margin-bottom: 35px;
+		font-family: 'SimeizDemiC';
+		border-top: 1px solid $cow;
+		padding: 10px 0 0;
+		margin: 10px 0 0;
+		max-width: 170px;
+		height: 47px;
+	}
+
+	&-btn-wrapper {
+		width: 120px;
+		margin: 17px auto 0;
+		background-color: transparent;
+		transition: background-color .3s ease-in-out;
+		position: relative;
+		cursor: pointer;
+		.btn-primary{
+			&::before{
+				display: none;
+			}
+		}
+		
+		&::after {
+			content: '';
+			width: 20px;
+			background-color: #fff;
+			position: absolute;
+			bottom: -2px;
+			top: -2px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			opacity: 1;
+		}
+	
+		&::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: 0;
+			background-color: #ff8e00;
+			transition: opacity .3s ease-in-out;
+			z-index: 2;
+		}
+	}
+}
