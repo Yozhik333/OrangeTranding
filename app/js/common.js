@@ -14,6 +14,7 @@ $('#menu-close').click(function () {
 	$('.sidebar-overlay').toggleClass('show');
 });
 
+
 var swiper = new Swiper(".swiper-container", {
 	spaceBetween: 120,
 	effect: "slide",

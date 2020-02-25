@@ -143,8 +143,8 @@ end .header -->
                   </ul>
                   <div class="flex align-items-center">
                     <div class="search">
-                      <label>
-                        <input type="text">
+                      <label id="search_btn">
+                        <input id="search" type="text" placeholder="Поиск">
                         <img src="img/svg-src/search.png" alt="Search">
                         <img src="img/search-mob.png" alt="Search">
                       </label>
@@ -276,6 +276,14 @@ end .header -->
 
 
 <script>
+	$('#search_btn').click(function () {
+		$('#search').addClass('active-search');
+	});
+	$(document).on('click', function (e) {
+		var el = '#search_btn';
+		if ($(e.target).closest(el).length) return;
+		$('#search').removeClass('active-search');
+	});
 	$('#menu-btn').click(function(){
 		$('.mobile-sidebar').toggleClass('show-menu');
 		$('body').toggleClass('body-hidden');
