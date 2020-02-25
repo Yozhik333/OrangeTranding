@@ -18,7 +18,38 @@ var swiper = new Swiper(".swiper-container", {
 	spaceBetween: 120,
 	effect: "slide",
 	width: 543,
+	// height: 588,
 	speed: 900,
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 200,
+			width: 270,
+		},
+		420: {
+			slidesPerView: 1,
+			spaceBetween: 200,
+			width: 310,
+		},
+		520: {
+			slidesPerView: 1,
+			spaceBetween: 200,
+			width: 383,
+		},
+		640: {
+			slidesPerView: 1,
+			spaceBetween: 180,
+			width: 383,
+		},
+		768: {
+			slidesPerView: 1,
+			spaceBetween: 200,
+		},
+		1024: {
+			slidesPerView: 1,
+			spaceBetween: 133,
+		},
+	},
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true
