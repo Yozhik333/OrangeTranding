@@ -382,3 +382,43 @@
 		}
 	}
 }
+
+
+.brand-card-banner .brand-card-banner__right .brand-card-slider-arrow-prev {
+	position: absolute;
+	top: 10rem;
+	left: 8.5rem;
+	background: #fff;
+	opacity: 0.9;
+	height: 6rem;
+	width: 6rem;
+	border-radius: 50%;
+	cursor: pointer;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	z-index: 2; }
+	.brand-card-banner .brand-card-banner__right .brand-card-slider-arrow-prev img {
+		width: 50%;
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg); }
+		.brand-card-banner .brand-card-banner__right .brand-card-slider-arrow-prev img::-moz-selection {
+			background: none; }
+		.brand-card-banner .brand-card-banner__right .brand-card-slider-arrow-prev img::selection {
+			background: none; }
+	.brand-card-banner .brand-card-banner__right .brand-card-slider-arrow-prev:hover {
+		-webkit-transition: .4s ease-in-out;
+		transition: .4s ease-in-out;
+		opacity: 1;
+		-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); }

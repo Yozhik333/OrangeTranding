@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43" height="32" viewBox="0 0 43 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="sidemenu-arrow" data-name="sidemenu-arrow" class="cls-1" d="M521.527,215.279a0.923,0.923,0,0,0-1.321,0,0.959,0.959,0,0,0,0,1.342l13.227,13.435H494.944a0.949,0.949,0,0,0,0,1.9h38.489l-13.227,13.435a0.959,0.959,0,0,0,0,1.342,0.924,0.924,0,0,0,1.321,0l15.483-15.726Z" transform="translate(-494 -215)"/>
+</svg>

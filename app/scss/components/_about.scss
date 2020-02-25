@@ -61,9 +61,8 @@
 			overflow: hidden;
 			&::before{
 				content: '';
-				z-index: 1;
-				transform: rotate(30deg);
-				display: block;
+				z-index: -1;
+				transform: rotate(90deg);
 				position: absolute;
 				background-image: url('../img/about-banner-bg.png');
 				background-position: 70%;
@@ -73,6 +72,7 @@
 				right: 0;
 				top: 0;
 				bottom: 0;
+				margin: -50px;
 			}
 		}
 	}
@@ -94,15 +94,23 @@
 			width: 100%; }
 		.about-banner .banner__row .banner__leftside {
 			max-width: 53%;
-			padding: 4.1rem 5rem 4.1rem 2.5rem; }
+			padding: 4.1rem 5rem 4.1rem 2.5rem;
+			@media (max-width: 1200px){
+				max-width: 100%;
+			}
+		}
 		.about-banner .banner__row .banner__rightside {
 			max-width: 47%;
 			position: relative;
 			@media (max-width: 1200px) {
 				margin: 50px 0 0;
+				max-width: 100%;
 				.banner__mission-company{
 					padding: 30px 20px;
 					margin: 0 auto;
+					.rictangle{
+						margin-bottom: 25px;
+					}
 				}
 			}
 		}
@@ -114,7 +122,11 @@
 	font-size: 4.125rem;
 	color: #9f8c6b;
 	position: relative;
-	padding-bottom: 0.75rem; }
+	padding-bottom: 0.75rem;
+	@media (max-width: 1200px) {
+		font-size: fs(40, 66, 320, 568);
+	}
+}
 	.head-title::after {
 		content: '';
 		display: block;
@@ -137,7 +149,11 @@
 	line-height: normal;
 	font-family: HelveticaNeueCyr;
 	font-size: 1.125rem;
-	margin-top: 1.5rem; }
+	margin-top: 1.5rem;
+	@media (max-width: 1200px) {
+		font-size: fs(14, 18, 320, 568);
+	}
+}
 
 .banner__mission-company {
 	max-width: 28.2rem;
@@ -151,7 +167,11 @@
 		padding: 2.4rem 0; }
 		.banner__mission-company .rictangle .company-mission {
 			max-width: 17.2rem;
-			margin: 0 auto; }
+			margin: 0 auto;
+			@media (max-width: 1200px) {
+				text-align: center;
+			}
+		}
 			.banner__mission-company .rictangle .company-mission p {
 				font-weight: 400;
 				line-height: normal;
@@ -162,7 +182,14 @@
 				width: -webkit-max-content;
 				width: -moz-max-content;
 				width: max-content;
-				margin: 0; }
+				margin: 0;
+				@media (max-width: 1200px) {
+						font-size: fs(26, 32, 320, 568);
+						text-align: center;
+						margin: 0 auto;
+						width: 100%;
+				}
+			}
 			.banner__mission-company .rictangle .company-mission span {
 				font-weight: 400;
 				line-height: normal;
@@ -231,7 +258,8 @@
 			bottom: -0.2rem;
 			left: 0;
 			right: 0;
-			margin: auto; }
+			margin: auto;
+		}
 	.banner__mission-company .more-info-block p {
 		color: #ff8e00;
 		font-weight: 400;
@@ -253,12 +281,22 @@
 		width: -webkit-max-content;
 		width: -moz-max-content;
 		width: max-content;
+		transition: background .4s ease;
 		margin-top: 1rem;
 		border: 1px solid #ff8e00; }
 		.banner__mission-company .more-info-block .download-file img {
 			margin-right: 1rem; }
 		.banner__mission-company .more-info-block .download-file:hover {
 			background: none; }
+
+@media (max-width: 1200px) {
+	.more-info-block {
+		text-align: center;
+		.download-file{
+			margin: 0 auto;
+		}
+	}
+}
 
 .about-text {
 	position: absolute;
