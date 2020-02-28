@@ -55,10 +55,13 @@
 				color: #fff;
 				margin: 5px 0 50px;
 				@include media-breakpoint-down(xl){
-					font-size: fs(14, 24, 320, 1500);
+					font-size: fs(16, 24, 320, 1500);
 				}
 				@media (max-width: 1024px) {
 					margin: 0 auto 20px;
+				}
+				@media (max-width: 568px) {
+					width: 100%;
 				}
 			}
 		}

@@ -2,12 +2,19 @@
 	max-width: 97rem;
 	margin: 0 auto;
 	padding-left: 0.975rem;
-	padding-right: 0.975rem; }
+	padding-right: 0.975rem;
+	@media (max-width: 568px) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
 
 .logo-wrapper-outside {
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex; }
+	display: flex;
+	align-items: center;
+}
 
 .menu-btn {
 	background: -webkit-gradient(linear, left bottom, left top, from(#4a453a), to(#8d8165));

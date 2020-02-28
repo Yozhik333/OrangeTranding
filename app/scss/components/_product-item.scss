@@ -33,7 +33,7 @@
 }
 
 .products-items-list {
-	margin: 0 -22px;
+	margin: 30px -12px 0;
 	@include media-breakpoint-down(xl){
 		justify-content: center;
 	}
@@ -42,14 +42,18 @@
 .product__item {
 	display: flex;
 	flex-flow: column;
+	width: 293px;
+	margin: 0 auto;
 	padding: 45px;
-	width: 100%;
+	// width: 100%;
 	text-align: center;
 	box-shadow: 0 0 0 rgba(116, 97, 69, 0.25);
 	transition: box-shadow .3s ease-in-out;
 	position: relative;
 	background-color: #ffffff;
-	
+	@media (max-width: 568px) {
+		padding: 37px 23px;
+	}
 	&:hover {
 		box-shadow: 0 0 59px rgba(116, 97, 69, 0.25);
 		
@@ -95,17 +99,27 @@
 	}
 	
 	&-wrapper {
-		padding: 11px 12px;
-		width: 293px;
+		padding: 11px 11px;
+		width: 20%;
 		display: flex;
+		@media (max-width: 1024px) {
+			width: 50%;
+		}
+		@media (max-width: 568px) {
+			padding: 11px 5px;
+		}
 	}
 	
 	
 	&-img {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-bottom: 51px;
+		margin: 0 auto;
+		width: 80px;
+		min-height: 277px;
+		img{
+			max-width: 100%;
+			margin: 0 auto;
+			display: block;
+		}
 	}
 	
 	&-mark {
@@ -113,10 +127,12 @@
 		font-size: 14px;
 		font-style: italic;
 		line-height: 17.97px;
-		margin-bottom: 27px;
+		margin-bottom: 23px;
 		font-family: "HelveticaNeueCyr";
 		position: relative;
-		
+		@media (max-width: 568px) {
+			font-size: fs(12, 14, 320, 568);
+		}
 		&::after {
 			content: '';
 			width: 3px;
@@ -134,11 +150,15 @@
 	&-title {
 		color: #000000;
 		font-size: 24px;
-		font-weight: 600;
+		font-weight: 400;
 		line-height: 17.97px;
 		margin-bottom: 35px;
-		font-family: 'Simeiz';
+		font-family: 'SimeizD';
 		height: 100%;
+		@media (max-width: 568px) {
+			font-size: fs(18, 24, 320, 568);
+			margin-bottom: 27px;
+		}
 	}
 	
 	&-property {
@@ -149,6 +169,10 @@
 		margin-bottom: 43px;
 		font-family: "HelveticaNeueCyr";
 		flex-flow: wrap;
+		@media (max-width: 568px) {
+			font-size: fs(12, 15, 320, 568);
+			margin-bottom: 40px;
+		}
 	}
 	
 	&-btn-wrapper {
