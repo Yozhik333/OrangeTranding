@@ -96,7 +96,7 @@ brand_card_slider.owlCarousel({
 		600: {
 			items: 2
 		},
-		800: {
+		1200: {
 			items: 3
 		}
 	}

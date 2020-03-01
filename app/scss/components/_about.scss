@@ -63,7 +63,8 @@
 .about-banner {
 	background-size: cover;
 	background-repeat: no-repeat;
-	@media (max-width: 1200px) {
+	background-position: center;
+	@media (max-width: 1024px) {
 			position: relative;
 			overflow: hidden;
 			background-image: none!important;
@@ -85,7 +86,7 @@
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		@media (max-width: 1200px) {
+		@media (max-width: 1024px) {
 			flex-flow: column;
 			padding: 20px 10px;
 			align-items: center;
@@ -100,14 +101,14 @@
 		.about-banner .banner__row .banner__leftside {
 			max-width: 53%;
 			padding: 4.1rem 5rem 4.1rem 2.5rem;
-			@media (max-width: 1200px){
+			@media (max-width: 1024px){
 				max-width: 100%;
 			}
 		}
 		.about-banner .banner__row .banner__rightside {
 			max-width: 47%;
 			position: relative;
-			@media (max-width: 1200px) {
+			@media (max-width: 1024px) {
 				margin: 50px 0 0;
 				max-width: 100%;
 				.banner__mission-company{
@@ -122,13 +123,13 @@
 
 .head-title {
 	font-weight: 400;
-	line-height: normal;
-	font-family: Simeiz;
+	line-height: 1.3;
+	font-family: 'SimeizD', serif;;
 	font-size: 4.125rem;
 	color: #9f8c6b;
 	position: relative;
 	padding-bottom: 0.75rem;
-	@media (max-width: 1200px) {
+	@media (max-width: 1024px) {
 		font-size: fs(40, 66, 320, 568);
 	}
 }
@@ -146,51 +147,49 @@
 	position: relative;
 	z-index: 3;
 	font-weight: 400;
-	line-height: normal;
+	line-height: 1.3;
 	font-family: HelveticaNeueCyr;
 	font-size: 1.125rem; }
 
 .content-text p {
 	margin: 0;
 	font-weight: 400;
-	line-height: normal;
+	line-height: 1.3;
 	font-family: HelveticaNeueCyr;
 	font-size: 1.125rem;
 	margin-top: 1.5rem;
-	@media (max-width: 1200px) {
+	@media (max-width: 1024px) {
 		font-size: fs(14, 18, 320, 568);
 	}
 }
 
 .banner__mission-company {
-	max-width: 28.2rem;
+	max-width: 467px;
 	min-height: 100%;
 	background: rgba(0, 0, 0, 0.5);
-	padding: 6rem 3.5rem 0 3.5rem; }
+	padding: 7rem 3rem 0 3rem; }
 	.banner__mission-company .rictangle {
 		width: 100%;
 		margin: 0 auto 6rem auto;
 		position: relative;
-		padding: 2.4rem 0; }
+		padding: 42px 20px; }
 		.banner__mission-company .rictangle .company-mission {
-			max-width: 17.2rem;
-			margin: 0 auto;
-			@media (max-width: 1200px) {
+			@media (max-width: 1024px) {
 				text-align: center;
 			}
 		}
 			.banner__mission-company .rictangle .company-mission p {
 				font-weight: 400;
 				line-height: normal;
-				font-family: Simeiz;
+				font-family: 'SimeizD', sans-serif;
 				color: #fff;
-				font-size: 2rem;
+				font-size: 36px;
 				text-transform: uppercase;
 				width: -webkit-max-content;
 				width: -moz-max-content;
 				width: max-content;
 				margin: 0;
-				@media (max-width: 1200px) {
+				@media (max-width: 1024px) {
 						font-size: fs(26, 32, 320, 568);
 						text-align: center;
 						margin: 0 auto;
@@ -200,11 +199,15 @@
 			.banner__mission-company .rictangle .company-mission span {
 				font-weight: 400;
 				line-height: normal;
-				font-family: Simeiz;
+				font-family: 'SimeizD', sans-serif;
 				color: #fff;
-				font-size: 1.6rem;
+				font-size: 30px;
 				margin-top: 0.4rem;
-				display: block; }
+				display: block;
+				@media (max-width: 568px) {
+					font-size: fs(22, 30, 320, 568);
+				}
+			}
 		.banner__mission-company .rictangle .rictangle__line {
 			position: absolute;
 			background: #fff; }
@@ -271,15 +274,23 @@
 		color: #ff8e00;
 		font-weight: 400;
 		line-height: normal;
-		font-family: Simeiz;
+		font-family: 'SimeizD', serif;
 		margin: 0;
-		font-size: 1.85rem; }
+		font-size: 30px;
+		@media (max-width: 568px) {
+			font-size: fs(23, 30, 320, 568);
+		}
+	}
 	.banner__mission-company .more-info-block span {
 		color: #fff;
 		font-weight: 400;
 		line-height: normal;
 		font-family: HelveticaNeueCyr;
-		font-size: 1.45rem; }
+		font-size: 23px;
+		@media (max-width: 568px) {
+			font-size: fs(20, 23, 320, 568);
+		}
+	}
 	.banner__mission-company .more-info-block .download-file {
 		display: block;
 		padding: 0.5rem 1.4rem 0.5rem 0.75rem;
@@ -296,7 +307,7 @@
 		.banner__mission-company .more-info-block .download-file:hover {
 			background: none; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
 	.more-info-block {
 		text-align: center;
 		.download-file{
@@ -310,14 +321,32 @@
 	font-size: 7.6rem;
 	color: #fff;
 	z-index: 99;
-	right: -3.5rem;
+	right: -5rem;
 	bottom: 14.2rem;
 	opacity: 0.5;
 	-webkit-transform: rotate(270deg);
 	transform: rotate(270deg);
 	font-weight: 400;
 	line-height: normal;
-	font-family: 'Simeiz';
+	font-family: 'SimeizD', serif;
+	@media (max-width: 1550px) {
+		right: -6rem;
+	}
+	@media (max-width: 1500px) {
+		right: -7.5rem;
+	}
+	@media (max-width: 1440px) {
+		right: -8.8rem;
+	}
+	@media (max-width: 1400px) {
+		right: -10rem;
+	}
+	@media (max-width: 1360px) {
+		right: -12rem;
+	}
+	@media (max-width: 1290px) {
+		right: -14rem;
+	}
 	@media (max-width: 1200px) {
 		display: none;
 	}
@@ -335,7 +364,7 @@
 		font-size: 2.25rem;
 		font-weight: 400;
 		line-height: normal;
-		font-family: Simeiz;
+		font-family: 'SimeizD', serif;
 		font-weight: bolder;
 		width: -webkit-max-content;
 		width: -moz-max-content;
@@ -345,16 +374,20 @@
 		position: relative;
 		z-index: 2;
 		padding: 0 2rem;
-		@media (max-width: 1200px) {
-			width: 70%;
+		@media (max-width: 1024px) {
+			width: 80%;
 			padding: 0;
-			font-size: 27px;
+			font-size: fs(20, 34, 320, 1024);
 		}
 	}
 	.company-title p {
 		margin-bottom: 0;
 		color: #000;
-		text-transform: none; }
+		text-transform: none;
+		@media (max-width: 1024px) {
+			font-size: fs(18, 22, 320, 1024);
+		}
+	}
 	.company-title span {
 		color: #000; }
 	.company-title::after {
@@ -420,24 +453,39 @@
 		justify-content: space-evenly;
 		.about-card{
 			width: 50%;
-			margin: 1rem;
-			@media (max-width: 768px) {
+			margin: 28px;
+			@media (max-width: 820px) {
 				width: 40%;
+				margin: 24px;
 			}
 			@media (max-width: 568px) {
-				width: 100%;
+				width: 48%;
+				margin: 20px 0;
 				.card-content{
 					.content-title, .content-text{
-						font-size: fs(14, 16, 320, 1000)!important;
+						font-size: fs(11, 14, 320, 568)!important;
+					}
+				}
+			}
+			@media (max-width: 400px) {
+				padding: 20px;
+				.card-content{
+					.content-title, .content-text{
+						font-size: fs(11, 14, 320, 568)!important;
 					}
 				}
 			}
 			.card-content{
 				.content-title, .content-text{
-					font-size: fs(10, 16, 320, 1000);
+					font-size: fs(10, 16, 320, 1024);
 				}
 			}
 		}
+	}
+}
+@media (max-width: 568px){
+	.company-about-cards{
+		justify-content: space-between;
 	}
 }
 
@@ -529,86 +577,6 @@
 			margin: auto;
 			border-radius: 50%;
 			top: 0.5rem; }
-	// .circle-block:nth-child(4) .circle-wrap {
-	//   margin-left: 0.6rem; }
-
-// @media (max-width: 1200px){
-// 	.advantages-circles{
-// 		flex-flow: column wrap;
-// 		.circle-block{
-// 			display: flex;
-// 			position: relative;
-// 			width: 100%;
-// 			.circle-text{
-// 				padding: 40px 0 0;
-// 				position: relative;
-// 				&::after{
-// 					top: 50%;
-// 					display: none;
-// 				}
-// 			}
-// 			.circle-bottom-text{
-// 				padding-top: 40px;
-// 				position: relative;
-// 				&::before{
-// 					top: 50%;
-// 					display: none;
-// 				}
-// 			}
-// 			&:nth-child(even){
-// 				.circle-wrap{
-// 					&::before{
-// 						content: '';
-// 						position: absolute;
-// 						border: 1px dashed #9f8c6b;
-// 						height: 1px;
-// 						left: 93px;
-// 						right: 93px;
-// 						bottom: -1px;
-// 						opacity: 0.7;
-// 					}
-// 					@media (max-width: 1200px) {
-// 						margin: 0 auto 0 0;
-// 					}
-// 				}
-// 			}
-// 			&:nth-child(odd){
-// 				.circle-wrap{
-// 					&::before{
-// 						content: '';
-// 						position: absolute;
-// 						border: 1px dashed #9f8c6b;
-// 						height: 1px;
-// 						left: 93px;
-// 						right: 93px;
-// 						bottom: -1px;
-// 						opacity: 0.7;
-// 					}
-// 					@media (max-width: 1200px) {
-// 						margin: 0 0 0 auto;
-// 					}
-// 				}
-// 			}
-// 			&:last-child{
-// 				.circle-wrap{
-// 					&::before{
-// 						display: none;
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-// @media (max-width: 430px){
-// 	.advantages-circles{
-// 		flex-flow: column wrap;
-// 		.circle-block{
-// 			flex-flow: wrap;
-// 			justify-content: center;
-// 		}
-// 	}
-// }
 
 // ********************
 
