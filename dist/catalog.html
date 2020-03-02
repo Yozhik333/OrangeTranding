@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Каталог</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<div id="header"></div>
+
+	<div id="wineroom" class="wineroom">
+		<img src="img/wineroom.png" alt="Закрытый фильтр">
+	</div>
+	<!-- /.filter-close -->
+
+	<div class="catalog-banner" style="background-image: url(img/catalog-banner.jpg);">
+		<div class="header-container">
+			<div class="catalog-filter">
+				<div id="filter-close" class="catalog-filter__img">
+					<img src="img/catalog-filter.svg" alt="Фильтр">
+				</div>
+				<div class="catalog-filter__body">
+					<ul>
+						<li>
+							<div class="filter-delete">&#10005;</div>
+							<p><i>Цена: </i> 15 000 - 50 000</p>
+						</li>
+						<li>
+							<div class="filter-delete">&#10005;</div>
+							<p><i>Регион: </i> Алматы</p>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-banner__caption">
+					<h1>каталог</h1>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<!-- .catalog-banner -->
+
+	<div id="filter-open" class="filter-open">
+		<div class="filter-open-wrap">
+			<div class="filter-open__head">
+				<div class="filter-open__head--headline">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g><g><path fill="#c10029" d="M23.525.382l-1.512 9.994v.002l-1.406 9.287v3.9H3.227v-4.078h.004L.337.382zm-1.279 1.101H1.616l1.347 8.893c.002 0 6.03-2.679 8.969 0 2.201 2.008 6.762 1.007 8.91.378z"/></g></g></svg>
+					<h2>Фильтры</h2>
+				</div>
+				<div id="filter-open-remove" class="filter-open__head--btn">
+					&times;</div>
+			</div>
+			<div class="filter-open__body">
+				<div class="filter-category">
+					<div class="filter-category__headline">
+						Объем
+					</div>
+					<ul>
+						<li>
+							<input type="checkbox" name="volume" id="volume1">
+							<label for="volume1">0,75 литра</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="volume2">
+							<label for="volume2">1,5 литра</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="volume3">
+							<label for="volume3">0,375 литра</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="volume4">
+							<label for="volume4">3 литра</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="volume5">
+							<label for="volume5">0,2 литра</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="volume6">
+							<label for="volume6">6 литров</label>
+						</li>
+					</ul>
+				</div>
+				<div class="filter-category">
+					<div class="filter-category__headline">
+						Страна
+					</div>
+					<ul>
+						<li>
+							<input type="checkbox" name="volume" id="country1">
+							<label for="country1">Австралия</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="country2">
+							<label for="country2">Германия</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="country3">
+							<label for="country3">Испания</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="country4">
+							<label for="country4">Италия</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="country5">
+							<label for="country5">Литва</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="country6">
+							<label for="country6">Новая Зеландия</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="country7">
+							<label for="country7">Россия</label>
+						</li>
+					</ul>
+				</div>
+				<div class="filter-category">
+					<div class="filter-category__headline">
+						Производитель
+					</div>
+					<ul>
+						<li>
+							<input type="checkbox" name="volume" id="manufacturer1">
+							<label for="manufacturer1">Moet Chandon</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="manufacturer2">
+							<label for="manufacturer2">Laurent Perrier</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="manufacturer3">
+							<label for="manufacturer3">Valdo</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="manufacturer4">
+							<label for="manufacturer4">MerottoPiper-Heidsieck</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="manufacturer5">
+							<label for="manufacturer5">Codorniu</label>
+						</li>
+					</ul>
+				</div>
+				<div class="filter-category">
+					<div class="filter-category__headline">
+						Цена
+					</div>
+					<ul>
+						<li>
+							<input type="radio" name="volume" id="price1">
+							<label for="price1">До 500 тг</label>
+						</li>
+						<li>
+							<input type="radio" name="volume" id="price2">
+							<label for="price2">От 500 до 1000 тг</label>
+						</li>
+						<li>
+							<input type="radio" name="volume" id="price3">
+							<label for="price3">От 1000 до 2000 тг</label>
+						</li>
+						<li>
+							<input type="radio" name="volume" id="price4">
+							<label for="price4">От 2000 до 5000 тг</label>
+						</li>
+						<li>
+							<input type="radio" name="volume" id="price5">
+							<label for="price5">От 5000 до 10 000 тг</label>
+						</li>
+						<li>
+							<input type="radio" name="volume" id="price6">
+							<label for="price6">От 10 000 до 50 000 тг</label>
+						</li>
+						<li>
+							<input type="radio" name="volume" id="price7">
+							<label for="price7">От 50 000 тг</label>
+						</li>
+					</ul>
+				</div>
+				<div class="filter-category">
+					<div class="filter-category__headline">
+						Цвет
+					</div>
+					<ul>
+						<li>
+							<input type="checkbox" name="volume" id="color1">
+							<label for="color1">Игристое-белое</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="color2">
+							<label for="color2">Шампанское-белое</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="color3">
+							<label for="color3">Шампанское-розове</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="color4">
+							<label for="color4">Игристое-розовое</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="color5">
+							<label for="color5">Игристое-красное</label>
+						</li>
+					</ul>
+				</div>
+				<div class="filter-category">
+					<div class="filter-category__headline">
+						Сорт винограда
+					</div>
+					<ul>
+						<li>
+							<input type="checkbox" name="volume" id="wine1">
+							<label for="wine1">Пино Нуар, Шардоне, Пино Менье</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="wine2">
+							<label for="wine2">Пино Нуар, Шардоне</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="wine3">
+							<label for="wine3">Глера(Просекко</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="wine4">
+							<label for="wine4">Шардоне</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="wine5">
+							<label for="wine5">Пино Нуар</label>
+						</li>
+						<li>
+							<input type="checkbox" name="volume" id="wine6">
+							<label for="wine6">Шардоне, Пино Нуар</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="filter-open__footer">
+			<a href="#" class="btn-slide">Применить фильтры</a>
+			<a href="#" class="btn-slide">Сбросить все</a>
+			</div>
+		</div>
+		<!-- /.filter-open-wrap -->
+	</div>
+	<!-- /.filter-open -->
+
+	<section class="products-items">
+			<div class="header-container">
+
+				<!-- <div class="title-page__wrap">
+					<h2>популярные <span>новинки</span></h2>
+				</div> -->
+
+				<div class="select-wrap">
+					<div class="select-container flex">
+						<div class="select-main-wrap">
+							<i>Отсортировать по:</i>
+							<div class="select">
+								<select name="slct" id="slct">
+									<option selected>Новизне</option>
+									<option value="1">Крутизне</option>
+									<option value="2">Цене</option>
+									<option value="3">Запаху</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /.select-wrap -->
+
+				<div class="products-items-list flex-wrap flex">
+						<div class="product__item-wrapper">
+								<div class="product__item">
+										<div class="product__item-img">
+												<img src="img/first-sect/img-1.png" alt="image">
+										</div>
+										<div class="product__item-mark">
+												Белое полусухое
+										</div>
+										<div class="product__item-title">
+												Demi Sec Ferrari
+										</div>
+										<div class="flex justify-content-between product__item-property">
+												<div>Италия</div>
+												<div>0,75л</div>
+										</div>
+										
+										<div class="product__item-btn-wrapper">
+												<button class="btn-primary">
+																<span>
+																		подробнее
+																</span>
+												</button>
+										</div>
+								</div>
+						</div>
+						
+						<div class="product__item-wrapper">
+								<div class="product__item">
+										<div class="product__item-img">
+												<img src="img/first-sect/img-2.png" alt="image">
+										</div>
+										<div class="product__item-mark">
+												Белое полусухое
+										</div>
+										<div class="product__item-title">
+												Demi Sec Ferrari
+										</div>
+										<div class="flex justify-content-between product__item-property">
+												<div>Италия</div>
+												<div>0,75л</div>
+										</div>
+										
+										<div class="product__item-btn-wrapper">
+												<button class="btn-primary">
+																<span>
+																		подробнее
+																</span>
+												</button>
+										</div>
+								</div>
+						</div>
+						
+						<div class="product__item-wrapper">
+								<div class="product__item">
+										<div class="product__item-img">
+												<img src="img/first-sect/img-3.png" alt="image">
+										</div>
+										<div class="product__item-mark">
+												Белое полусухое
+										</div>
+										<div class="product__item-title">
+												Demi Sec Ferrari
+										</div>
+										<div class="flex justify-content-between product__item-property">
+												<div>Италия</div>
+												<div>0,75л</div>
+										</div>
+										
+										<div class="product__item-btn-wrapper">
+												<button class="btn-primary">
+																<span>
+																		подробнее
+																</span>
+												</button>
+										</div>
+								</div>
+						</div>
+						
+						<div class="product__item-wrapper">
+								<div class="product__item">
+										<div class="product__item-img">
+												<img src="img/first-sect/img-4.png" alt="image">
+										</div>
+										<div class="product__item-mark">
+												Белое полусухое
+										</div>
+										<div class="product__item-title">
+												Demi Sec Ferrari
+										</div>
+										<div class="flex justify-content-between product__item-property">
+												<div>Италия</div>
+												<div>0,75л</div>
+										</div>
+										
+										<div class="product__item-btn-wrapper">
+												<button class="btn-primary">
+																<span>
+																		подробнее
+																</span>
+												</button>
+										</div>
+								</div>
+						</div>
+						
+						<div class="product__item-wrapper">
+								<div class="product__item">
+										<div class="product__item-img">
+												<img src="img/first-sect/img-5.png" alt="image">
+										</div>
+										<div class="product__item-mark">
+												Белое полусухое
+										</div>
+										<div class="product__item-title">
+												Demi Sec Ferrari
+										</div>
+										<div class="flex justify-content-between product__item-property">
+												<div>Италия</div>
+												<div>0,75л</div>
+										</div>
+										
+										<div class="product__item-btn-wrapper">
+												<button class="btn-primary">
+																<span>
+																		подробнее
+																</span>
+												</button>
+										</div>
+								</div>
+						</div>
+						
+						<div class="product__item-wrapper">
+								<div class="product__item">
+										<div class="product__item-img">
+												<img src="img/first-sect/img-1.png" alt="image">
+										</div>
+										<div class="product__item-mark">
+												Белое полусухое
+										</div>
+										<div class="product__item-title">
+												Demi Sec Ferrari
+										</div>
+										<div class="flex justify-content-between product__item-property">
+												<div>Италия</div>
+												<div>0,75л</div>
+										</div>
+										
+										<div class="product__item-btn-wrapper">
+												<button class="btn-primary">
+																<span>
+																		подробнее
+																</span>
+												</button>
+										</div>
+								</div>
+						</div>
+						
+						<div class="product__item-wrapper">
+								<div class="product__item">
+										<div class="product__item-img">
+												<img src="img/first-sect/img-2.png" alt="image">
+										</div>
+										<div class="product__item-mark">
+												Белое полусухое
+										</div>
+										<div class="product__item-title">
+												Demi Sec Ferrari
+										</div>
+										<div class="flex justify-content-between product__item-property">
+												<div>Италия</div>
+												<div>0,75л</div>
+										</div>
+										
+										<div class="product__item-btn-wrapper">
+												<button class="btn-primary">
+																<span>
+																		подробнее
+																</span>
+												</button>
+										</div>
+								</div>
+						</div>
+						
+						<div class="product__item-wrapper">
+								<div class="product__item">
+										<div class="product__item-img">
+												<img src="img/first-sect/img-3.png" alt="image">
+										</div>
+										<div class="product__item-mark">
+												Белое полусухое
+										</div>
+										<div class="product__item-title">
+												Demi Sec Ferrari
+										</div>
+										<div class="flex justify-content-between product__item-property">
+												<div>Италия</div>
+												<div>0,75л</div>
+										</div>
+										
+										<div class="product__item-btn-wrapper">
+												<button class="btn-primary">
+																<span>
+																		подробнее
+																</span>
+												</button>
+										</div>
+								</div>
+						</div>
+						
+						<div class="product__item-wrapper">
+								<div class="product__item">
+										<div class="product__item-img">
+												<img src="img/first-sect/img-4.png" alt="image">
+										</div>
+										<div class="product__item-mark">
+												Белое полусухое
+										</div>
+										<div class="product__item-title">
+												Demi Sec Ferrari
+										</div>
+										<div class="flex justify-content-between product__item-property">
+												<div>Италия</div>
+												<div>0,75л</div>
+										</div>
+										
+										<div class="product__item-btn-wrapper">
+												<button class="btn-primary">
+																<span>
+																		подробнее
+																</span>
+												</button>
+										</div>
+								</div>
+						</div>
+						
+						<div class="product__item-wrapper">
+								<div class="product__item">
+										<div class="product__item-img">
+												<img src="img/first-sect/img-5.png" alt="image">
+										</div>
+										<div class="product__item-mark">
+												Белое полусухое
+										</div>
+										<div class="product__item-title">
+												Demi Sec Ferrari
+										</div>
+										<div class="flex justify-content-between product__item-property">
+												<div>Италия</div>
+												<div>0,75л</div>
+										</div>
+										
+										<div class="product__item-btn-wrapper">
+												<button class="btn-primary">
+																<span>
+																		подробнее
+																</span>
+												</button>
+										</div>
+								</div>
+						</div>
+				</div>
+				<div class="pagination__wrapper">
+						<div class="pagination flex align-items-center">
+								<div class="prev">
+										<i class="icon-arrow"></i>
+								</div>
+								<ul>
+										<li>
+												1
+										</li>
+										<li>
+												2
+										</li>
+										<li class="active">
+												3
+										</li>
+										<li class="dot">
+												......
+										</li>
+										<li>
+												16
+										</li>
+								</ul>
+								<div class="next active">
+										<i class="icon-arrow"></i>
+								</div>
+						</div>
+				</div>
+		</div>
+	</section>
+	<!-- /.products-items -->
+
+
+	<div id="footer"></div>
+	<!-- /#footer -->
+
+	<div class="sidebar-overlay"></div>
+
+	<script src="js/scripts.min.js" async></script>
+
+	<!-- Made in UxCodes -->
+
+</body>
+</html>
