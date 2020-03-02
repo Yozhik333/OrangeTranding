@@ -1,6 +1,7 @@
 
 .filter-open-active{
 	width: 85% !important;
+	border-right: 1px solid #951400;
 }
 
 .filter-open{
@@ -13,7 +14,6 @@
 	left: 0;
 	background-color: #fff;
 	overflow-y: auto;
-	border: 1px solid #0e0301;
 	transition: width .3s ease;
 	&-wrap{
 		max-width: 93.75em;
@@ -46,7 +46,7 @@
 			}
 		.filter-open__body{
 			display: flex;
-			justify-content: space-between;
+			justify-content: flex-start;
 			flex-flow: wrap;
 			.filter-category:not(:last-child){
 				margin-right: 30px;
@@ -83,6 +83,12 @@
 			.btn-slide{
 				margin: 0 30px 0 0;
 				padding: 3px 13px;
+				@media (max-width: 568px) {
+					font-size: 10px;
+					letter-spacing: normal;
+					line-height: 1.2;
+					text-align: center;
+				}
 			}
 		}
 	}

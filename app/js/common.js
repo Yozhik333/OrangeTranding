@@ -65,6 +65,7 @@ let btnClose = document.getElementById('filter-close')
 
 $(btnClose).click(function () {
 	$('#filter-open').addClass('filter-open-active');
+	$('body').addClass('body-hidden');
 });
 
 $('#filter-close2').click(function () {
@@ -73,6 +74,7 @@ $('#filter-close2').click(function () {
 
 $('#filter-open-remove').click(function () {
 	$('#filter-open').removeClass('filter-open-active');
+	$('body').removeClass('body-hidden');
 })
 
 
