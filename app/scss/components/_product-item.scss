@@ -4,6 +4,7 @@
 	position: relative;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 30px;
 	h2{
 		position: relative;
 		z-index: 1;
@@ -40,9 +41,6 @@
 }
 
 .product__item {
-	display: flex;
-	flex-flow: column;
-	width: 293px;
 	margin: 0 auto;
 	padding: 45px;
 	// width: 100%;
@@ -101,7 +99,6 @@
 	&-wrapper {
 		padding: 11px 11px;
 		width: 20%;
-		display: flex;
 		@media (max-width: 1024px) {
 			width: 50%;
 		}

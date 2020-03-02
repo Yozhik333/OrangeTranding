@@ -96,11 +96,13 @@
 			justify-content: center;
 			margin-top: 100px;
 			&__img{
-				width: 529x;
+				width: 529px;
 				padding: 41px 67px;
 				background-color: #fff;
 				img {
 					max-width: 100%;
+					display: block;
+					margin: 0 auto;
 				}
 			}
 			&__description{
