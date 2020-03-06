@@ -21,7 +21,10 @@
 
 .brands-items{
 	background-color: #fefcf9;
-	padding: 67px 0 0 0;
+	padding: 67px 0 120px 0;
+	.text-center{
+		font-weight: bold;
+	}
 }
 
 .brands-items-list {
@@ -85,22 +88,31 @@
 	
 	&-wrapper {
 		padding: 11px 12px;
-		width: auto;
+		width: 20%;
 		max-width: 100%;
-		// @include media-breakpoint-down(xl){
-		// 	width: auto;
-		// }
+		@media (max-width: 1200px) {
+			width: 50%;
+		}
+		@media (max-width: 1200px) {
+			width: 100%;
+			margin: 0 auto;
+			.brand__item{
+				margin: 0 auto;
+			}
+		}
 	}
 	
 	
 	&-img {
 		width: 160px;
-		height: 93px;
+		height: 110px;
 		max-width: 100%;
 		max-height: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		border-bottom: 1px solid $cow;
+		padding: 0 0 10px 0;
 		img{
 			max-width: 100%;
 			max-height: 100%;
@@ -110,16 +122,17 @@
 	}
 	&-title {
 		color: #000000;
+		position: relative;
 		font-size: 18px;
 		font-weight: bold;
 		line-height: 17.97px;
 		margin-bottom: 35px;
 		font-family: 'SimeizD';
-		border-top: 1px solid $cow;
 		padding: 10px 0 0;
 		margin: 10px 0 0;
 		max-width: 170px;
 		height: 47px;
+		
 	}
 
 	&-btn-wrapper {
@@ -352,7 +365,7 @@
 	margin: 0 auto;
 	justify-content: center;
 	max-width: 70rem;
-	padding: 3rem 0;
+	padding: 1rem 0;
 	@media (max-width: 1200px){
 		padding: 0;
 		flex-flow: wrap;

@@ -46,7 +46,7 @@
 			}
 		.filter-open__body{
 			display: flex;
-			justify-content: flex-start;
+			justify-content: space-evenly;
 			flex-flow: wrap;
 			.filter-category:not(:last-child){
 				margin-right: 30px;
