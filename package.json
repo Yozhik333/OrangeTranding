@@ -9,7 +9,7 @@
   "author": "Bakytbek Adil - UxCodes",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.29.3",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-cache": "^1.1.3",
